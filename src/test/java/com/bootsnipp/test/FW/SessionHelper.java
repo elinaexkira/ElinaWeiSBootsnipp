@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import java.util.NoSuchElementException;
 
 public class SessionHelper extends HelperBase{
-    WebDriver wd;
     public SessionHelper(WebDriver wd){
         super(wd);
     }
@@ -32,5 +31,9 @@ public class SessionHelper extends HelperBase{
         } catch (NoSuchElementException ex){
             return false;
         }
+    }
+
+    public void clickOnLoginButton() {
+        click(By.cssSelector("[href=\"https://bootsnipp.com/login\"]"));
     }
 }

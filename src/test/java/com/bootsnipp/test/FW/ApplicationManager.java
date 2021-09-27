@@ -3,9 +3,7 @@ package com.bootsnipp.test.FW;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.support.events.AbstractWebDriverEventListener;
@@ -21,6 +19,10 @@ public class ApplicationManager {
     SessionHelper session;
     LoginHelper log;
     String browser;
+
+    public ApplicationManager(String browser) {
+        this.browser = browser;
+    }
 
     public static class MyListener extends AbstractWebDriverEventListener {
         Logger logger = LoggerFactory.getLogger(MyListener.class);

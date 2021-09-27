@@ -1,0 +1,5 @@
+22:01:34 [Test worker] INFO  com.bootsnipp.test.Tests.TestBase - Start test loginPageTests with data: []
+22:01:35 [Test worker] ERROR com.bootsnipp.test.Tests.TestBase - FAILED: Test method loginPageTests
+Screenshot: C:\Users\rilov\Documents\GitHub\ElinaWeiSBootsnipp\screenshot-1632596495027.png
+22:01:35 [Test worker] INFO  com.bootsnipp.test.Tests.TestBase - Stop test 
+22:01:35 [Test worker] INFO  com.bootsnipp.test.Tests.TestBase - ======================================================================

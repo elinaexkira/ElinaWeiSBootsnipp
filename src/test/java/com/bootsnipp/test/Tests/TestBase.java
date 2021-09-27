@@ -15,7 +15,7 @@ import java.util.Arrays;
 public class TestBase {
 
 
-    protected final ApplicationManager app =
+    protected static ApplicationManager app =
             new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
 
     Logger logger = LoggerFactory.getLogger(TestBase.class);
@@ -44,7 +44,7 @@ public class TestBase {
         logger.info("======================================================================");
     }
 
-    @AfterMethod
+    @AfterMethod(enabled = false)
     public void tearDown(){
         app.stop();
     }
